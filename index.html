@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crownvo.com Growth OS Presentation</title>
+    <meta
+      name="description"
+      content="Documentation-style presentation for Crownvo.com, the email marketing platform built on its own proprietary script foundation, and the next AI operator layer for campaign creation, email writing, automation, and UI updates."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+
+    <div class="page-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#overview">
+          <span class="brand-mark"></span>
+          <div>
+            <p class="brand-kicker">Crownvo.com</p>
+            <h1>Growth OS</h1>
+          </div>
+        </a>
+
+        <nav>
+          <a href="#overview">Overview</a>
+          <a href="#current-state">Current Platform</a>
+          <a href="#current-graph">Current Architecture</a>
+          <a href="#ai-vision">AI Operator</a>
+          <a href="#future-graph">Future Architecture</a>
+          <a href="#journey">Chat-to-Execution Flow</a>
+          <a href="#ui-updates">UI Updates</a>
+          <a href="#cost-model">Cost Model</a>
+          <a href="#marketing-plan">Marketing Plan</a>
+          <a href="#rollout">Rollout Plan</a>
+        </nav>
+
+        <div class="sidebar-panel">
+          <span class="panel-label">Presentation Focus</span>
+          <p>
+            Documentation-style narrative for what exists today, what the AI layer
+            will do next, and how the interface should evolve around a
+            conversation-first workflow.
+          </p>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="hero section-card" id="overview">
+          <div class="hero-copy">
+            <span class="eyebrow">Product Presentation</span>
+            <h2>
+              Crownvo.com is the email marketing platform, built on its own
+              proprietary script foundation and expanded into a complete growth
+              operating system.
+            </h2>
+            <p class="lead">
+              The current product already handles email warmup, lead generation,
+              AI chat, campaign building, email editing, and campaign delivery.
+              The next stage is a Loveable-style AI operator that can understand
+              a client request in chat and create the full campaign system for
+              them: strategy, content, automation, launch, and optimization.
+            </p>
+          </div>
+
+          <div class="hero-grid">
+            <article>
+              <span class="stat-label">Foundation</span>
+              <strong>Crownvo Core Platform</strong>
+              <p>Delivery engine, sending operations, account management, and campaign execution built on Crownvo.com's own script base.</p>
+            </article>
+            <article>
+              <span class="stat-label">Current Scope</span>
+              <strong>Growth Workflows</strong>
+              <p>Lead acquisition, warmup, editor, chat assistance, segmentation, and reporting, with native reply inbox and follow-up still pending.</p>
+            </article>
+            <article>
+              <span class="stat-label">Next Scope</span>
+              <strong>AI Operator</strong>
+              <p>One web and Telegram chat interface that can design, build, reply, follow up, launch, and improve client campaigns.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-card" id="current-state">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Shipped Platform</span>
+              <h3>Current feature system inside Crownvo.com</h3>
+            </div>
+            <p>
+              This is the operating surface already created in Crownvo.com on
+              top of its own proprietary script foundation. It covers the full
+              outbound workflow from audience capture to sending and analytics,
+              while native reply, communication, and follow-up capabilities are
+              still required additions.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h4>Email Warmup</h4>
+              <p>Reputation ramp-up, mailbox health checks, cadence control, and sender readiness.</p>
+              <ul>
+                <li>Warmup scheduling</li>
+                <li>Deliverability preparation</li>
+                <li>Inbox placement support</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Lead Generation</h4>
+              <p>Audience sourcing, segmentation, qualification, and campaign-ready list assembly.</p>
+              <ul>
+                <li>Lead intake and imports</li>
+                <li>Filtering and ICP alignment</li>
+                <li>Target list preparation</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>AI Chat</h4>
+              <p>Assisted workflow layer for ideation, prompt-based tasks, and faster operator support.</p>
+              <ul>
+                <li>Strategy help</li>
+                <li>Reply assistance</li>
+                <li>Task acceleration</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Email Editor</h4>
+              <p>Content writing, structure editing, personalization control, and template composition.</p>
+              <ul>
+                <li>Template editing</li>
+                <li>Tone and structure updates</li>
+                <li>Reusable content blocks</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Campaign Engine</h4>
+              <p>Campaign assembly, scheduling, multi-step sequence management, and controlled launch.</p>
+              <ul>
+                <li>Campaign setup</li>
+                <li>Sequence timing</li>
+                <li>Launch control</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Campaign Automation</h4>
+              <p>Rules, timing, branching, and workflow automation around campaign creation and send steps.</p>
+              <ul>
+                <li>Trigger-based logic</li>
+                <li>Sequence timing</li>
+                <li>Launch-driven actions</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Reply, Communication, and Follow-up</h4>
+              <p>This is still missing and needs a native inbox, thread communication, reply assistance, and follow-up control inside the platform.</p>
+              <ul>
+                <li>Unified email reply inbox</li>
+                <li>Communication thread management</li>
+                <li>Follow-up execution and stop logic</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Analytics</h4>
+              <p>Tracking, performance review, and feedback loops for iteration and optimization.</p>
+              <ul>
+                <li>Open and reply patterns</li>
+                <li>Sequence performance signals</li>
+                <li>Optimization inputs</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Telegram Command System</h4>
+              <p>Planned Telegram-based control layer so owners can manage campaigns, approvals, and AI actions through chat.</p>
+              <ul>
+                <li>Command-based campaign control</li>
+                <li>Approval and status actions</li>
+                <li>Mobile-first operational access</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Owner Reporting</h4>
+              <p>Planned AI analysis layer that will send daily or weekly summaries to the account owner with actions and recommendations.</p>
+              <ul>
+                <li>Daily or weekly reports</li>
+                <li>Performance analysis and insights</li>
+                <li>Owner-level account summaries</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>AI Credit Control</h4>
+              <p>Planned usage wallet that meters AI work and blocks chat or server-side execution when credits are exhausted.</p>
+              <ul>
+                <li>Credit-based AI usage</li>
+                <li>Usage meter and top-up flow</li>
+                <li>Hard stop when balance is empty</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-card" id="current-graph">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">System Graph</span>
+              <h3>Current architecture of the shipped platform</h3>
+            </div>
+            <p>
+              The current system already acts like a growth workflow engine.
+              The graph below shows what is live today and where reply,
+              communication, and follow-up still sit outside the native product
+              flow.
+            </p>
+          </div>
+
+          <div class="diagram-card">
+            <pre class="mermaid">
+flowchart LR
+    source[Lead Sources<br/>Inbound, outbound, imports] --> leads[Lead Generation Layer]
+    leads --> enrich[Qualification and Segmentation]
+    enrich --> campaign[Campaign Builder]
+    campaign --> editor[Email Editor]
+    editor --> sequence[Sequence and Timing Rules]
+    sequence --> core[Crownvo Core<br/>Proprietary Script Base]
+
+    warmup[Email Warmup Engine] --> core
+    chat[AI Chat Support] --> editor
+    core --> inbox[Mailbox Delivery and Sending]
+    inbox --> manual[Manual Reply and Communication Today]
+    manual -. gap .-> needed[Native Reply and Follow-up Needed]
+    inbox --> analytics[Analytics and Reporting]
+    analytics --> campaign
+    analytics --> enrich
+
+    subgraph ops[Operational Services]
+      template[Template Library]
+      approval[Review and Approval]
+      routing[Campaign Automation Rules]
+    end
+
+    template --> editor
+    approval --> campaign
+    routing --> sequence
+            </pre>
+          </div>
+
+          <details class="code-block">
+            <summary>Mermaid source for current architecture</summary>
+                <pre><code>flowchart LR
+    source[Lead Sources&lt;br/&gt;Inbound, outbound, imports] --&gt; leads[Lead Generation Layer]
+    leads --&gt; enrich[Qualification and Segmentation]
+    enrich --&gt; campaign[Campaign Builder]
+    campaign --&gt; editor[Email Editor]
+    editor --&gt; sequence[Sequence and Timing Rules]
+    sequence --&gt; core[Crownvo Core&lt;br/&gt;Proprietary Script Base]
+
+    warmup[Email Warmup Engine] --&gt; core
+    chat[AI Chat Support] --&gt; editor
+    core --&gt; inbox[Mailbox Delivery and Sending]
+    inbox --&gt; manual[Manual Reply and Communication Today]
+    manual -. gap .-&gt; needed[Native Reply and Follow-up Needed]
+    inbox --&gt; analytics[Analytics and Reporting]
+    analytics --&gt; campaign
+    analytics --&gt; enrich
+
+    subgraph ops[Operational Services]
+      template[Template Library]
+      approval[Review and Approval]
+      routing[Campaign Automation Rules]
+    end
+
+    template --&gt; editor
+    approval --&gt; campaign
+    routing --&gt; sequence</code></pre>
+          </details>
+        </section>
+
+        <section class="section-card" id="ai-vision">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Next Product Layer</span>
+              <h3>AI operator that can do the work through chat</h3>
+            </div>
+            <p>
+              The next major feature is not just another assistant. It is an
+              execution layer that listens to a client goal and converts that
+              conversation from web chat or Telegram into assets, automations,
+              replies, approvals, reports, and live campaigns inside the platform.
+            </p>
+          </div>
+
+          <div class="operator-grid">
+            <article>
+              <h4>Strategy Agent</h4>
+              <p>Turns the chat into a campaign brief, offer framing, audience strategy, and success criteria.</p>
+            </article>
+            <article>
+              <h4>Content Agent</h4>
+              <p>Writes subject lines, email bodies, follow-ups, CTAs, and personalization variants.</p>
+            </article>
+            <article>
+              <h4>Automation Agent</h4>
+              <p>Builds triggers, delay logic, branching, reply paths, and lead-state actions.</p>
+            </article>
+            <article>
+              <h4>Campaign Agent</h4>
+              <p>Creates campaign objects, attaches content, schedules sends, and launches approved flows.</p>
+            </article>
+            <article>
+              <h4>Warmup Agent</h4>
+              <p>Checks mailbox readiness and adjusts campaign launch against sender reputation needs.</p>
+            </article>
+            <article>
+              <h4>Optimization Agent</h4>
+              <p>Reads campaign performance, recommends adjustments, and can prepare the next iteration automatically.</p>
+            </article>
+            <article>
+              <h4>Telegram Operations Agent</h4>
+              <p>Lets account owners manage campaigns, approvals, and key actions through a Telegram chat interface.</p>
+            </article>
+            <article>
+              <h4>Reply and Communication Agent</h4>
+              <p>Builds a native inbox layer, AI-assisted replies, communication routing, and follow-up logic.</p>
+            </article>
+            <article>
+              <h4>Reporting Agent</h4>
+              <p>Analyzes account activity and sends daily or weekly summaries, alerts, and action recommendations to the owner.</p>
+            </article>
+            <article>
+              <h4>Credit and Access Agent</h4>
+              <p>Checks AI credits before work starts and blocks chat or server-side execution when balance is empty.</p>
+            </article>
+          </div>
+
+          <div class="highlight-banner">
+            <strong>Target outcome:</strong>
+            <span>
+              A client or owner can say in web chat or Telegram, "Create a
+              campaign for our SaaS offer, write five emails, set the follow-up
+              rules, manage replies, and report to me weekly," and the system
+              prepares the workflow inside the product when credits are available.
+            </span>
+          </div>
+        </section>
+
+        <section class="section-card" id="future-graph">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Future Graph</span>
+              <h3>Detailed architecture for the AI-first platform</h3>
+            </div>
+            <p>
+              This graph shows the future operating model: one conversational
+              entry point across web and Telegram, multiple specialized AI
+              workers, a credit gate, native reply and follow-up handling, and
+              owner reporting before and after campaign execution.
+            </p>
+          </div>
+
+          <div class="diagram-card large-diagram">
+            <pre class="mermaid">
+flowchart TB
+    owner[Account Owner] --> channels[Web Chat and Telegram Control Layer]
+    channels --> credits{AI Credits Available?}
+    credits -->|Yes| intake[Conversation Intake]
+    credits -->|No| blocked[Block Chat and Server Actions]
+    blocked --> topup[Top Up Credits]
+
+    intake --> memory[Brand, ICP, Offer, History Memory]
+    intake --> planner[Goal and Intent Planner]
+    memory --> planner
+
+    planner --> strategist[Campaign Strategy Agent]
+    planner --> writer[Email Content Agent]
+    planner --> automator[Automation Builder Agent]
+    planner --> audience[Audience and Segment Agent]
+    planner --> warmup[Warmup and Deliverability Agent]
+    planner --> replier[Reply and Communication Agent]
+    planner --> reporter[Reporting Agent]
+    planner --> designer[UI and Layout Suggestion Agent]
+
+    strategist --> brief[Campaign Brief]
+    writer --> emails[Email Sequence Drafts]
+    automator --> logic[Automation Tree]
+    audience --> lists[Lead Lists and Segments]
+    warmup --> readiness[Mailbox Readiness Plan]
+    replier --> comms[Reply Inbox and Follow-up Logic]
+    designer --> previews[Preview and Layout Variants]
+
+    brief --> approval[Human Approval or Auto-Approve Policy]
+    emails --> approval
+    logic --> approval
+    lists --> approval
+    readiness --> approval
+    comms --> approval
+    previews --> approval
+
+    approval --> platform[Crownvo Platform<br/>Built on Proprietary Script]
+    platform --> campaigns[Campaign Creation]
+    platform --> editor[Email Editor Population]
+    platform --> automations[Automation Publishing]
+    platform --> replyhub[Reply Inbox and Communication Center]
+    platform --> followups[Follow-up Engine]
+    platform --> launch[Launch and Scheduling]
+
+    followups --> delivery[Sending and Reply Collection]
+    launch --> delivery[Sending and Reply Collection]
+    delivery --> replyhub
+    delivery --> analytics[Analytics and Insight Loop]
+    replyhub --> analytics
+    analytics --> optimizer[Optimization Agent]
+    optimizer --> planner
+    analytics --> reporter
+    reporter --> reports[Daily and Weekly Owner Reports]
+    reports --> owner
+
+    subgraph governance[Control and Safety Layer]
+      policy[Compliance and Brand Policy]
+      limits[Permission, Role, Credit, and Spend Limits]
+      audit[Audit Trail and Change Log]
+    end
+
+    policy --> approval
+    limits --> approval
+    audit --> approval
+            </pre>
+          </div>
+
+          <details class="code-block">
+            <summary>Mermaid source for future AI architecture</summary>
+                <pre><code>flowchart TB
+    owner[Account Owner] --&gt; channels[Web Chat and Telegram Control Layer]
+    channels --&gt; credits{AI Credits Available?}
+    credits --&gt;|Yes| intake[Conversation Intake]
+    credits --&gt;|No| blocked[Block Chat and Server Actions]
+    blocked --&gt; topup[Top Up Credits]
+
+    intake --&gt; memory[Brand, ICP, Offer, History Memory]
+    intake --&gt; planner[Goal and Intent Planner]
+    memory --&gt; planner
+
+    planner --&gt; strategist[Campaign Strategy Agent]
+    planner --&gt; writer[Email Content Agent]
+    planner --&gt; automator[Automation Builder Agent]
+    planner --&gt; audience[Audience and Segment Agent]
+    planner --&gt; warmup[Warmup and Deliverability Agent]
+    planner --&gt; replier[Reply and Communication Agent]
+    planner --&gt; reporter[Reporting Agent]
+    planner --&gt; designer[UI and Layout Suggestion Agent]
+
+    strategist --&gt; brief[Campaign Brief]
+    writer --&gt; emails[Email Sequence Drafts]
+    automator --&gt; logic[Automation Tree]
+    audience --&gt; lists[Lead Lists and Segments]
+    warmup --&gt; readiness[Mailbox Readiness Plan]
+    replier --&gt; comms[Reply Inbox and Follow-up Logic]
+    designer --&gt; previews[Preview and Layout Variants]
+
+    brief --&gt; approval[Human Approval or Auto-Approve Policy]
+    emails --&gt; approval
+    logic --&gt; approval
+    lists --&gt; approval
+    readiness --&gt; approval
+    comms --&gt; approval
+    previews --&gt; approval
+
+    approval --&gt; platform[Crownvo Platform&lt;br/&gt;Built on Proprietary Script]
+    platform --&gt; campaigns[Campaign Creation]
+    platform --&gt; editor[Email Editor Population]
+    platform --&gt; automations[Automation Publishing]
+    platform --&gt; replyhub[Reply Inbox and Communication Center]
+    platform --&gt; followups[Follow-up Engine]
+    platform --&gt; launch[Launch and Scheduling]
+
+    followups --&gt; delivery[Sending and Reply Collection]
+    launch --&gt; delivery[Sending and Reply Collection]
+    delivery --&gt; replyhub
+    delivery --&gt; analytics[Analytics and Insight Loop]
+    replyhub --&gt; analytics
+    analytics --&gt; optimizer[Optimization Agent]
+    optimizer --&gt; planner
+    analytics --&gt; reporter
+    reporter --&gt; reports[Daily and Weekly Owner Reports]
+    reports --&gt; owner
+
+    subgraph governance[Control and Safety Layer]
+      policy[Compliance and Brand Policy]
+      limits[Permission, Role, Credit, and Spend Limits]
+      audit[Audit Trail and Change Log]
+    end
+
+    policy --&gt; approval
+    limits --&gt; approval
+    audit --&gt; approval</code></pre>
+          </details>
+        </section>
+
+        <section class="section-card" id="journey">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Execution Flow</span>
+              <h3>How a client chat becomes a live campaign</h3>
+            </div>
+            <p>
+              The AI layer should not stop at suggestions. It should collect
+              client intent, build the assets, ask for approval where needed,
+              and publish into the platform without the user having to manually
+              stitch each step together.
+            </p>
+          </div>
+
+          <div class="diagram-card">
+            <pre class="mermaid">
+sequenceDiagram
+    autonumber
+        participant Owner
+        participant Telegram as Telegram Control Chat
+        participant Credits as AI Credit Wallet
+    participant AI as AI Operator
+    participant Strategy as Strategy Agent
+    participant Writer as Email Agent
+        participant Reply as Reply and Follow-up Agent
+    participant Builder as Automation Agent
+    participant Warmup as Warmup Agent
+    participant Core as Crownvo Core
+        participant Reports as Reporting Agent
+
+        Owner->>Telegram: Create and manage campaign by chat
+        Telegram->>Credits: Check AI credit balance
+        alt Credits available
+          Credits-->>Telegram: Approve request
+          Telegram->>AI: Pass request and account context
+          AI->>Strategy: Extract goal, audience, offer, deadline
+          Strategy-->>AI: Campaign brief and success plan
+          AI->>Writer: Generate emails, subject lines, and CTAs
+          Writer-->>AI: Draft email assets
+          AI->>Reply: Build reply inbox, communication, and follow-up rules
+          Reply-->>AI: Communication workflow
+          AI->>Builder: Build timing, triggers, and branch logic
+          Builder-->>AI: Automation workflow
+          AI->>Warmup: Validate sender readiness
+          Warmup-->>AI: Launch readiness and deliverability advice
+          AI->>Core: Create campaign, publish emails, and attach follow-ups
+          Core-->>Reports: Send delivery, reply, and performance data
+          Reports-->>Owner: Daily or weekly owner summary
+        else No credits
+          Credits-->>Telegram: Balance empty
+          Telegram-->>Owner: Add credits to continue chat or server work
+        end
+            </pre>
+          </div>
+        </section>
+
+        <section class="section-card" id="ui-updates">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Interface Direction</span>
+              <h3>UI updates needed for the AI-first experience</h3>
+            </div>
+            <p>
+              If the AI can build campaigns, emails, and automation from chat,
+              the interface needs to shift from tool-first navigation to a guided
+              command center with visibility, approvals, and live previews.
+            </p>
+          </div>
+
+          <div class="ui-grid">
+            <article>
+              <h4>Chat-First Workspace</h4>
+              <p>Primary panel for goal intake, requests, edits, and AI-driven execution status.</p>
+            </article>
+            <article>
+              <h4>Telegram Control Layer</h4>
+              <p>Mobile-first command surface for approvals, campaign actions, and quick operator requests through Telegram.</p>
+            </article>
+            <article>
+              <h4>Live Campaign Preview</h4>
+              <p>Right-side visual surface showing email drafts, automation maps, and campaign setup in real time.</p>
+            </article>
+            <article>
+              <h4>Approval Checkpoints</h4>
+              <p>Explicit review states for content, automation rules, audience selection, and launch permission.</p>
+            </article>
+            <article>
+              <h4>Reply and Communication Inbox</h4>
+              <p>Unified space for email replies, thread communication, AI reply help, and owner visibility across all accounts.</p>
+            </article>
+            <article>
+              <h4>Brand and Voice Memory</h4>
+              <p>Persistent controls for tone, offer language, compliance notes, and preferred campaign patterns.</p>
+            </article>
+            <article>
+              <h4>Automation Canvas</h4>
+              <p>Visual map that the AI can generate and the client can still inspect or edit manually, including follow-up paths and stop rules.</p>
+            </article>
+            <article>
+              <h4>Performance Cockpit</h4>
+              <p>Outcome dashboard that links results back to the exact AI decisions, prompts, and automation logic.</p>
+            </article>
+            <article>
+              <h4>AI Credit Wallet</h4>
+              <p>Visible AI balance, usage history, top-up controls, and hard gating so chat and server tasks stop when credits are empty.</p>
+            </article>
+            <article>
+              <h4>Owner Report Center</h4>
+              <p>Daily or weekly reporting surface with AI analysis, account summaries, risk alerts, and next-step recommendations.</p>
+            </article>
+          </div>
+
+          <div class="comparison-grid">
+            <article>
+              <span class="comparison-label">Current UX</span>
+              <h4>Operator manually builds the flow</h4>
+              <p>Users move between feature modules to configure leads, content, automation, and delivery.</p>
+            </article>
+            <article>
+              <span class="comparison-label">Target UX</span>
+              <h4>Operator approves what the AI assembled</h4>
+              <p>The default experience becomes conversation, preview, approval, and launch with optional manual override.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-card" id="costs-and-marketing">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Operating Economics</span>
+              <h3 id="cost-model">Full detailed cost model without developer cost</h3>
+            </div>
+            <p>
+              This planning model is for Crownvo.com as a new AI-first platform.
+              It excludes product development cost and focuses on support, AI,
+              infrastructure, email operations, growth tooling, and market
+              expansion. Figures below are monthly GBP estimates and are built
+              around the minimum budget needed to give the platform a real
+              chance to win market attention.
+            </p>
+          </div>
+
+          <div class="highlight-banner">
+            <strong>Budget assumption:</strong>
+            <span>
+              The strongest way to sell a unique platform is to combine reliable
+              support, strong AI response quality, stable email operations, and
+              consistent distribution. Crownvo.com should be planned around a
+              required operating budget of <strong>GBP 10,000 to GBP 15,000 per month</strong>
+              for at least <strong>the first 6 months</strong>. Below that level,
+              it is not realistic to expect strong market results, enough paid
+              learning cycles, or reliable customer traction.
+            </span>
+          </div>
+
+          <div class="feature-grid cost-grid">
+            <article class="feature-card">
+              <h4>AI and Model Cost</h4>
+              <p>Core LLM usage for chat, campaign planning, email writing, automation generation, fallback models, evaluation, and logging.</p>
+              <ul>
+                <li>Monthly range: GBP 1,400 to GBP 2,500</li>
+                <li>Includes primary and fallback model calls</li>
+                <li>Includes prompt logging, evaluation, and retry budget</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Support and Success Cost</h4>
+              <p>Customer support, onboarding help, demo support, manual review, and campaign quality follow-up.</p>
+              <ul>
+                <li>Monthly range: GBP 2,000 to GBP 3,000</li>
+                <li>Live chat and ticket handling</li>
+                <li>Onboarding and customer success support</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Platform Operations</h4>
+              <p>Hosting, database, storage, observability, backups, security tools, and automation utilities.</p>
+              <ul>
+                <li>Monthly range: GBP 700 to GBP 1,200</li>
+                <li>Cloud hosting and database services</li>
+                <li>Monitoring, alerts, and backup coverage</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Email Operations</h4>
+              <p>Mailboxes, domains, warmup, deliverability tooling, sender reputation maintenance, and inbox health services.</p>
+              <ul>
+                <li>Monthly range: GBP 700 to GBP 1,100</li>
+                <li>Mailbox and domain inventory</li>
+                <li>Warmup and deliverability stack</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Data and GTM Tooling</h4>
+              <p>Lead sources, enrichment, validation, CRM support tools, scheduling tools, and attribution support.</p>
+              <ul>
+                <li>Monthly range: GBP 600 to GBP 1,000</li>
+                <li>Lead data and validation services</li>
+                <li>CRM and revenue tooling support</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Marketing and Distribution</h4>
+              <p>Paid social, creative distribution, founder content promotion, retargeting, influencer seeding, and PR support.</p>
+              <ul>
+                <li>Monthly range: GBP 3,800 to GBP 5,500</li>
+                <li>Facebook and Instagram boosting budget</li>
+                <li>Content, PR, and outreach amplification</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="data-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Monthly estimate</th>
+                  <th>Annual run rate</th>
+                  <th>What it covers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AI and inference</td>
+                  <td><span class="range">GBP 1,400 to GBP 2,500</span></td>
+                  <td>GBP 16,800 to GBP 30,000</td>
+                  <td>Chat requests, campaign creation, email drafting, automation generation, quality retries, logging, and evaluation.</td>
+                </tr>
+                <tr>
+                  <td>Support and customer success</td>
+                  <td><span class="range">GBP 2,000 to GBP 3,000</span></td>
+                  <td>GBP 24,000 to GBP 36,000</td>
+                  <td>Support agents, onboarding help, launch assistance, ticketing, and client retention activity.</td>
+                </tr>
+                <tr>
+                  <td>Infrastructure and software ops</td>
+                  <td><span class="range">GBP 700 to GBP 1,200</span></td>
+                  <td>GBP 8,400 to GBP 14,400</td>
+                  <td>Hosting, storage, observability, backups, security, uptime protection, and automation utilities.</td>
+                </tr>
+                <tr>
+                  <td>Email operations</td>
+                  <td><span class="range">GBP 700 to GBP 1,100</span></td>
+                  <td>GBP 8,400 to GBP 13,200</td>
+                  <td>Mailboxes, domains, warmup, deliverability systems, and sender reputation maintenance.</td>
+                </tr>
+                <tr>
+                  <td>Data and GTM tooling</td>
+                  <td><span class="range">GBP 600 to GBP 1,000</span></td>
+                  <td>GBP 7,200 to GBP 12,000</td>
+                  <td>Lead data, enrichment, validation, CRM tooling, scheduling tools, and attribution support.</td>
+                </tr>
+                <tr>
+                  <td>Marketing and growth</td>
+                  <td><span class="range">GBP 3,800 to GBP 5,500</span></td>
+                  <td>GBP 45,600 to GBP 66,000</td>
+                  <td>Facebook boosting, retargeting, LinkedIn distribution, PR, podcasts, influencer activity, and campaign distribution.</td>
+                </tr>
+                <tr>
+                  <td>Compliance and contingency</td>
+                  <td><span class="range">GBP 300 to GBP 700</span></td>
+                  <td>GBP 3,600 to GBP 8,400</td>
+                  <td>Privacy reviews, policy work, extra deliverability response, and small emergency budget.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="comparison-grid scenario-grid">
+            <article>
+              <span class="comparison-label">Below Threshold</span>
+              <h4>Under GBP 10,000 per month</h4>
+              <p>Not recommended. This level is unlikely to create enough distribution, learning cycles, support quality, and AI coverage to produce strong results inside 6 months.</p>
+            </article>
+            <article>
+              <span class="comparison-label">Required Budget</span>
+              <h4>GBP 10,000 to GBP 15,000 per month</h4>
+              <p>This is the working budget needed for the first 6 months if Crownvo.com wants real traction, enough creative testing, strong support, and a fair chance of converting attention into revenue.</p>
+            </article>
+            <article>
+              <span class="comparison-label">Scale After Proof</span>
+              <h4>GBP 16,000 to GBP 22,000 per month</h4>
+              <p>Best used after the message, CAC, and creative winners are proven. This level is for faster amplification, not for finding the first working motion.</p>
+            </article>
+          </div>
+
+          <div class="diagram-card">
+            <pre class="mermaid">
+pie title Focused Growth Budget Mix
+    "Marketing and Distribution" : 40
+    "AI and Model Usage" : 18
+    "Support and Success" : 16
+    "Infrastructure and Ops" : 10
+    "Email Operations" : 7
+    "Data and GTM Tooling" : 6
+    "Compliance and Contingency" : 3
+            </pre>
+          </div>
+
+          <div class="quote-panel">
+            <h4>Facebook boosting view</h4>
+            <p>
+              Because Crownvo.com has a unique hook, the platform should perform
+              better in paid social than a generic email tool if the creative is
+              built around live demos, before-and-after automation examples,
+              founder explanation clips, and direct proof of outcomes. The right
+              move is to treat Facebook and Instagram boosting as a testing and
+              amplification engine, not as blind spend. Start with founder-led
+              assets, retarget everyone who watches or clicks, and scale only the
+              creative that produces demos and qualified calls. Without keeping
+              the GBP 10,000 to GBP 15,000 monthly budget alive for the first 6
+              months, even strong creative will not get enough repetition and
+              learning to produce dependable results.
+            </p>
+          </div>
+
+          <div class="section-heading marketing-heading">
+            <div>
+              <span class="eyebrow">Founder-Led GTM</span>
+              <h3 id="marketing-plan">Marketing plan for Muhammad Salauddin</h3>
+            </div>
+            <p>
+              The strongest go-to-market motion for a new and unique product is
+              to make Muhammad Salauddin the visible category voice. The message
+              is simple: Crownvo.com does not just help run campaigns; it helps
+              create campaigns, emails, and automation through conversation.
+            </p>
+          </div>
+
+          <div class="operator-grid channel-grid">
+            <article>
+              <h4>Video</h4>
+              <p>Short founder clips, screen-recorded product demos, before-and-after flows, and weekly launch updates.</p>
+            </article>
+            <article>
+              <h4>Podcast</h4>
+              <p>Founder interviews and guest appearances focused on AI in sales, automation, outreach, and modern email growth.</p>
+            </article>
+            <article>
+              <h4>News and PR</h4>
+              <p>Launch announcement, category story, founder narrative, and product comparison angles for startup and SaaS media.</p>
+            </article>
+            <article>
+              <h4>Blog and SEO</h4>
+              <p>Long-form authority content around AI campaigns, email automation, warmup, lead generation, and workflow design.</p>
+            </article>
+            <article>
+              <h4>Influencer and Partner Reach</h4>
+              <p>Micro-influencers in SaaS, agency, growth, and sales ops showing the product in real use rather than generic promotion.</p>
+            </article>
+            <article>
+              <h4>LinkedIn and Founder Brand</h4>
+              <p>Daily founder-led positioning, case study posts, product lessons, demo clips, and opinion-led category content.</p>
+            </article>
+            <article>
+              <h4>Email Campaigns</h4>
+              <p>Outbound and nurture flows to agencies, founders, SDR leaders, growth teams, and automation-focused operators.</p>
+            </article>
+            <article>
+              <h4>Webinars and Live Demos</h4>
+              <p>Monthly walkthroughs showing how one conversation becomes a live campaign, automation, and sequence.</p>
+            </article>
+            <article>
+              <h4>Retargeting and Conversion</h4>
+              <p>Retarget everyone who watched the videos, visited the page, opened founder emails, or engaged with the product story.</p>
+            </article>
+          </div>
+
+          <div class="data-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Channel</th>
+                  <th>Monthly budget</th>
+                  <th>Cadence</th>
+                  <th>Main goal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Facebook and Instagram boosting</td>
+                  <td><span class="range">GBP 1,500 to GBP 2,500</span></td>
+                  <td>3 to 5 active creatives, refreshed weekly</td>
+                  <td>Scale founder clips, demo visuals, and retargeting traffic into demo requests.</td>
+                </tr>
+                <tr>
+                  <td>LinkedIn founder distribution</td>
+                  <td><span class="range">GBP 200 to GBP 500</span></td>
+                  <td>5 posts weekly, 20 direct interactions daily</td>
+                  <td>Build authority and create demand with category-led founder content.</td>
+                </tr>
+                <tr>
+                  <td>Video production and editing support</td>
+                  <td><span class="range">GBP 700 to GBP 1,000</span></td>
+                  <td>3 short videos and 1 long demo weekly</td>
+                  <td>Create reusable proof assets that can be boosted and repurposed everywhere.</td>
+                </tr>
+                <tr>
+                  <td>Podcast outreach and placement</td>
+                  <td><span class="range">GBP 200 to GBP 400</span></td>
+                  <td>10 to 20 pitches monthly</td>
+                  <td>Borrow authority from existing audiences and expand trust around the founder story.</td>
+                </tr>
+                <tr>
+                  <td>News, PR, and launch coverage</td>
+                  <td><span class="range">GBP 300 to GBP 700</span></td>
+                  <td>1 launch wave plus ongoing follow-up</td>
+                  <td>Position Crownvo.com as a new category narrative, not just another tool.</td>
+                </tr>
+                <tr>
+                  <td>Blog and SEO content</td>
+                  <td><span class="range">GBP 300 to GBP 500</span></td>
+                  <td>4 to 6 articles monthly</td>
+                  <td>Capture intent around AI email marketing, automation, warmup, and campaign creation.</td>
+                </tr>
+                <tr>
+                  <td>Influencer and partner seeding</td>
+                  <td><span class="range">GBP 300 to GBP 900</span></td>
+                  <td>5 to 15 partner activations monthly</td>
+                  <td>Create real-use exposure with agency, SaaS, and GTM creators who can demonstrate the product.</td>
+                </tr>
+                <tr>
+                  <td>Email campaigns and outbound distribution</td>
+                  <td><span class="range">GBP 200 to GBP 400</span></td>
+                  <td>Weekly campaigns and daily outbound tests</td>
+                  <td>Turn audience attention into booked demos, pilots, and early customer conversations.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="quote-panel">
+            <h4>6-month spending rule</h4>
+            <p>
+              Crownvo.com should be presented as a platform that needs a
+              committed first-phase budget, not a low-cost experiment. The
+              correct expectation is: if the business wants meaningful traction,
+              it should protect a GBP 10,000 to GBP 15,000 monthly operating and
+              marketing budget for 6 months. Without that consistency, results
+              will be slower, weaker, and much harder to prove.
+            </p>
+          </div>
+
+          <div class="diagram-card">
+            <pre class="mermaid">
+flowchart LR
+    salauddin[Muhammad Salauddin<br/>Founder Voice] --> video[Video Demos and Shorts]
+    salauddin --> podcast[Podcast Appearances]
+    salauddin --> news[News and PR Narrative]
+    salauddin --> blog[Blog and SEO Content]
+    salauddin --> linkedin[LinkedIn Authority Posts]
+    salauddin --> influencer[Influencer and Partner Reach]
+    salauddin --> outbound[Email Campaigns and Outbound]
+
+    video --> attention[Attention and Awareness]
+    podcast --> trust[Trust and Authority]
+    news --> trust
+    blog --> search[Search Intent Capture]
+    linkedin --> trust
+    influencer --> attention
+    outbound --> demos[Booked Demos]
+
+    attention --> retarget[Paid Retargeting and Boosting]
+    trust --> retarget
+    search --> retarget
+    retarget --> demos
+    demos --> trial[Trial or Pilot]
+    trial --> proof[Case Study and Social Proof]
+    proof --> referrals[Referrals and Repeat Demand]
+            </pre>
+          </div>
+
+          <div class="timeline marketing-timeline">
+            <article>
+              <span>Days 1 to 30</span>
+              <h4>Category positioning and proof</h4>
+              <p>Publish founder introduction, launch page, 10 short demo clips, first blog articles, and the initial podcast and PR outreach wave.</p>
+            </article>
+            <article>
+              <span>Days 31 to 60</span>
+              <h4>Distribution and retargeting</h4>
+              <p>Boost the best founder clips on Facebook and Instagram, expand LinkedIn authority content, run email campaigns, and start retargeting all warm traffic.</p>
+            </article>
+            <article>
+              <span>Days 61 to 90</span>
+              <h4>Conversion and authority scale</h4>
+              <p>Push case studies, live demos, influencer proof, founder interviews, and tighter campaign offers to convert the attention into pilots and recurring customers.</p>
+            </article>
+          </div>
+
+          <div class="quote-panel confidence-panel">
+            <h4>Commercial stance</h4>
+            <p>
+              The market story should be told with confidence: Crownvo.com is
+              unique because it moves beyond assistance and toward execution.
+              That uniqueness is a strong selling advantage. The marketing plan
+              should reflect that confidence, while still using disciplined
+              testing, proof assets, and founder-led distribution to turn belief
+              into measurable pipeline.
+            </p>
+          </div>
+
+        </section>
+
+        <section class="section-card" id="rollout">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Execution Plan</span>
+              <h3>Suggested rollout phases for the AI operator release</h3>
+            </div>
+            <p>
+              A staged rollout keeps the system trustworthy: first assist, then
+              auto-build, then controlled auto-execution with analytics-driven
+              improvement.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article>
+              <span>Phase 1</span>
+              <h4>AI planning assistant</h4>
+              <p>Chat creates campaign briefs, email drafts, and automation suggestions, but humans still publish manually.</p>
+            </article>
+            <article>
+              <span>Phase 2</span>
+              <h4>AI builder</h4>
+              <p>Chat fills the campaign builder, email editor, and automation setup automatically for review.</p>
+            </article>
+            <article>
+              <span>Phase 3</span>
+              <h4>AI operator</h4>
+              <p>Approved policy allows the system to create, launch, and iterate with limited autonomous control.</p>
+            </article>
+          </div>
+
+          <div class="deliverables-grid">
+            <article>
+              <h4>Presentation Message</h4>
+              <p>We already built the feature foundation. The next leap is not another isolated feature; it is autonomous campaign execution through chat.</p>
+            </article>
+            <article>
+              <h4>Product Story</h4>
+              <p>Crownvo.com is the client-facing growth platform, with its own proprietary script foundation as the infrastructure base and the new AI operator as the execution layer.</p>
+            </article>
+            <article>
+              <h4>Commercial Value</h4>
+              <p>Faster launch times, lower setup friction, better personalization, and a stronger reason for clients to stay inside one platform.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="diagram-modal" hidden>
+      <div class="diagram-modal-backdrop" data-close-diagram="true"></div>
+      <section class="diagram-modal-panel" aria-label="Diagram full view">
+        <header class="diagram-modal-header">
+          <div>
+            <span class="eyebrow">Diagram Viewer</span>
+            <h3 class="diagram-modal-title">Architecture Graph</h3>
+          </div>
+          <div class="diagram-modal-controls">
+            <button type="button" class="diagram-control-button" data-diagram-action="zoom-out">-</button>
+            <button type="button" class="diagram-control-button" data-diagram-action="zoom-in">+</button>
+            <button type="button" class="diagram-control-button diagram-control-button-wide" data-diagram-action="reset">Reset</button>
+            <button type="button" class="diagram-control-button diagram-control-button-wide" data-close-diagram="true">Close</button>
+          </div>
+        </header>
+        <p class="diagram-modal-hint">
+          Use mouse wheel or trackpad to zoom. Drag the graph to pan in full view.
+        </p>
+        <div class="diagram-modal-stage">
+          <div class="diagram-modal-viewport"></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
