@@ -49,9 +49,9 @@ Planned additions include:
 
 ## Budget assumption in the presentation
 
-The cost model is written in GBP and is based on the assumption that Crownvo.com needs a working budget of GBP 10,000 to GBP 15,000 per month for the first 6 months to give the platform a real chance to gain traction.
+The cost model is written in GBP and is based on a total 6-month budget of GBP 10,000 to GBP 15,000 for the initial operating phase.
 
-The presentation explicitly argues that results should not be expected within 6 months without maintaining that budget level.
+The presentation explicitly argues that results should not be expected within 6 months without protecting that total budget across the full 6-month period.
 
 ## Project structure
 
