@@ -61,10 +61,11 @@
             </h2>
             <p class="lead">
               The current product already handles email warmup, lead generation,
-              AI chat, campaign building, email editing, and campaign delivery.
-              The next stage is a Loveable-style AI operator that can understand
-              a client request in chat and create the full campaign system for
-              them: strategy, content, automation, launch, and optimization.
+              campaign building, email editing, multiple SMTP including
+              personal Gmail, reply and follow-up management, owner reporting,
+              and campaign delivery. The next stage adds AI Chat, Telegram
+              Command System, and AI Credit Control so the platform can operate
+              through guided conversations with gated AI usage.
             </p>
           </div>
 
@@ -77,12 +78,12 @@
             <article>
               <span class="stat-label">Current Scope</span>
               <strong>Growth Workflows</strong>
-              <p>Lead acquisition, warmup, editor, chat assistance, segmentation, and reporting, with native reply inbox and follow-up still pending.</p>
+              <p>Lead acquisition, warmup, editor, campaigns, reply and follow-up, reporting, and multiple SMTP including personal Gmail.</p>
             </article>
             <article>
               <span class="stat-label">Next Scope</span>
               <strong>AI Operator</strong>
-              <p>One web and Telegram chat interface that can design, build, reply, follow up, launch, and improve client campaigns.</p>
+              <p>AI Chat, Telegram Command System, and AI Credit Control are the remaining major pieces still in progress.</p>
             </article>
           </div>
         </section>
@@ -96,9 +97,9 @@
             <p>
               This is the operating surface already created in Crownvo.com on
               top of its own proprietary script foundation. It covers the full
-              outbound workflow from audience capture to sending and analytics,
-              while native reply, communication, and follow-up capabilities are
-              still required additions.
+              outbound workflow from audience capture to SMTP-based sending,
+              reply handling, follow-up, and reporting. The remaining major
+              additions are AI Chat, Telegram Command System, and AI Credit Control.
             </p>
           </div>
 
@@ -123,11 +124,11 @@
             </article>
             <article class="feature-card">
               <h4>AI Chat</h4>
-              <p>Assisted workflow layer for ideation, prompt-based tasks, and faster operator support.</p>
+              <p>Planned conversational AI layer for ideation, prompt-based tasks, and guided operator support. This is not completed yet.</p>
               <ul>
-                <li>Strategy help</li>
-                <li>Reply assistance</li>
-                <li>Task acceleration</li>
+                <li>Status: Not completed yet</li>
+                <li>Strategy help and campaign prompting</li>
+                <li>Task acceleration through chat</li>
               </ul>
             </article>
             <article class="feature-card">
@@ -159,11 +160,22 @@
             </article>
             <article class="feature-card">
               <h4>Reply, Communication, and Follow-up</h4>
-              <p>This is still missing and needs a native inbox, thread communication, reply assistance, and follow-up control inside the platform.</p>
+              <p>Native inbox, thread communication, reply handling, and follow-up control are part of the completed platform.</p>
               <ul>
+                <li>Status: Completed</li>
                 <li>Unified email reply inbox</li>
                 <li>Communication thread management</li>
                 <li>Follow-up execution and stop logic</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Multiple SMTP Support</h4>
+              <p>Flexible sending layer with multiple SMTP connections, including personal Gmail support where needed.</p>
+              <ul>
+                <li>Status: Completed</li>
+                <li>Multiple SMTP configuration</li>
+                <li>Personal Gmail connection option</li>
+                <li>Routing across sender accounts</li>
               </ul>
             </article>
             <article class="feature-card">
@@ -177,8 +189,9 @@
             </article>
             <article class="feature-card">
               <h4>Telegram Command System</h4>
-              <p>Planned Telegram-based control layer so owners can manage campaigns, approvals, and AI actions through chat.</p>
+              <p>Planned Telegram-based control layer so owners can manage campaigns, approvals, and AI actions through chat. This is not completed yet.</p>
               <ul>
+                <li>Status: Not completed yet</li>
                 <li>Command-based campaign control</li>
                 <li>Approval and status actions</li>
                 <li>Mobile-first operational access</li>
@@ -186,8 +199,9 @@
             </article>
             <article class="feature-card">
               <h4>Owner Reporting</h4>
-              <p>Planned AI analysis layer that will send daily or weekly summaries to the account owner with actions and recommendations.</p>
+              <p>Completed reporting layer that sends daily or weekly summaries to the account owner with actions and recommendations.</p>
               <ul>
+                <li>Status: Completed</li>
                 <li>Daily or weekly reports</li>
                 <li>Performance analysis and insights</li>
                 <li>Owner-level account summaries</li>
@@ -195,8 +209,9 @@
             </article>
             <article class="feature-card">
               <h4>AI Credit Control</h4>
-              <p>Planned usage wallet that meters AI work and blocks chat or server-side execution when credits are exhausted.</p>
+              <p>Planned usage wallet that meters AI work and blocks chat or server-side execution when credits are exhausted. This is not completed yet.</p>
               <ul>
+                <li>Status: Not completed yet</li>
                 <li>Credit-based AI usage</li>
                 <li>Usage meter and top-up flow</li>
                 <li>Hard stop when balance is empty</li>
@@ -213,9 +228,10 @@
             </div>
             <p>
               The current system already acts like a growth workflow engine.
-              The graph below shows what is live today and where reply,
-              communication, and follow-up still sit outside the native product
-              flow.
+              The graph below shows what is live today, including multiple SMTP,
+              reply handling, follow-up, and owner reporting, and separates the
+              three items still in progress: AI Chat, Telegram Command System,
+              and AI Credit Control.
             </p>
           </div>
 
@@ -227,16 +243,20 @@ flowchart LR
     enrich --> campaign[Campaign Builder]
     campaign --> editor[Email Editor]
     editor --> sequence[Sequence and Timing Rules]
-    sequence --> core[Crownvo Core<br/>Proprietary Script Base]
+    sequence --> smtp[Multiple SMTP Layer<br/>Including Personal Gmail]
+    smtp --> core[Crownvo Core<br/>Proprietary Script Base]
 
     warmup[Email Warmup Engine] --> core
-    chat[AI Chat Support] --> editor
     core --> inbox[Mailbox Delivery and Sending]
-    inbox --> manual[Manual Reply and Communication Today]
-    manual -. gap .-> needed[Native Reply and Follow-up Needed]
+    inbox --> replyhub[Reply, Communication,<br/>and Follow-up Center]
     inbox --> analytics[Analytics and Reporting]
+    analytics --> reports[Daily and Weekly<br/>Owner Reports]
     analytics --> campaign
     analytics --> enrich
+
+    chat[AI Chat<br/>Not Completed Yet] -. planned .-> editor
+    telegram[Telegram Command System<br/>Not Completed Yet] -. planned .-> core
+    credits[AI Credit Control<br/>Not Completed Yet] -. planned gate .-> chat
 
     subgraph ops[Operational Services]
       template[Template Library]
@@ -258,16 +278,20 @@ flowchart LR
     enrich --&gt; campaign[Campaign Builder]
     campaign --&gt; editor[Email Editor]
     editor --&gt; sequence[Sequence and Timing Rules]
-    sequence --&gt; core[Crownvo Core&lt;br/&gt;Proprietary Script Base]
+    sequence --&gt; smtp[Multiple SMTP Layer&lt;br/&gt;Including Personal Gmail]
+    smtp --&gt; core[Crownvo Core&lt;br/&gt;Proprietary Script Base]
 
     warmup[Email Warmup Engine] --&gt; core
-    chat[AI Chat Support] --&gt; editor
     core --&gt; inbox[Mailbox Delivery and Sending]
-    inbox --&gt; manual[Manual Reply and Communication Today]
-    manual -. gap .-&gt; needed[Native Reply and Follow-up Needed]
+    inbox --&gt; replyhub[Reply, Communication,&lt;br/&gt;and Follow-up Center]
     inbox --&gt; analytics[Analytics and Reporting]
+    analytics --&gt; reports[Daily and Weekly&lt;br/&gt;Owner Reports]
     analytics --&gt; campaign
     analytics --&gt; enrich
+
+    chat[AI Chat&lt;br/&gt;Not Completed Yet] -. planned .-&gt; editor
+    telegram[Telegram Command System&lt;br/&gt;Not Completed Yet] -. planned .-&gt; core
+    credits[AI Credit Control&lt;br/&gt;Not Completed Yet] -. planned gate .-&gt; chat
 
     subgraph ops[Operational Services]
       template[Template Library]
