@@ -255,6 +255,49 @@ a {
   border-bottom: none;
 }
 
+.compact-financial .page-title {
+  margin-bottom: 0.8rem;
+}
+
+.compact-financial .section-block {
+  margin-bottom: 0.75rem;
+}
+
+.compact-financial .section-block h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+.compact-financial .tbd-note {
+  padding: 0.55rem 0.75rem;
+  line-height: 1.45;
+}
+
+.compact-financial .info-table {
+  margin-bottom: 0.65rem;
+  font-size: 0.74rem;
+}
+
+.compact-financial .info-table thead th {
+  padding: 0.42rem 0.45rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+}
+
+.compact-financial .info-table tbody th,
+.compact-financial .info-table td {
+  padding: 0.36rem 0.45rem;
+}
+
+.compact-financial .feature-list li {
+  padding: 0.24rem 0 0.24rem 1rem;
+  line-height: 1.35;
+}
+
+.compact-financial .feature-list li::before {
+  top: 0.58rem;
+}
+
 /* LISTS */
 .feature-list,
 .workflow-list {

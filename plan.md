@@ -282,7 +282,7 @@ Add supporting proof if available:
 
 ### Page 8: Financial Projections
 
-Purpose: provide board-level projections tied to the existing pricing model.
+Purpose: provide board-level projections tied to the existing pricing model, the founder-provided revenue ramp, and the adjusted pre-AI launch operating cost.
 
 Use three scenarios:
 
@@ -296,31 +296,74 @@ Projection windows:
 - 12 months
 - 24 months
 
+Conservative 6-month revenue ramp:
+
+| Timing | Revenue Type | Users | Revenue |
+| --- | --- | ---: | ---: |
+| Launch period | Lifetime package - one time | 100 | GBP 2,000 |
+| Month 4 | Monthly package with AI feature | 30 | GBP 750 |
+| Month 5 | Monthly package with AI feature | 70 total | GBP 1,750 |
+| Month 6 | Monthly package with AI feature | 120 total | GBP 3,000 |
+| 6-Month Total | One-time plus monthly ramp | 100 lifetime + 120 monthly | GBP 7,500 |
+
 Suggested projection table:
 
-| Scenario | Timeline | Customers | Expected MRR | Monthly Cost | Net Monthly Position |
-| --- | --- | ---: | ---: | ---: | ---: |
-| Conservative | 6 months | TBD | TBD | TBD | TBD |
-| Base Case | 6 months | TBD | TBD | TBD | TBD |
-| Growth Case | 6 months | TBD | TBD | TBD | TBD |
-| Conservative | 12 months | TBD | TBD | TBD | TBD |
-| Base Case | 12 months | TBD | TBD | TBD | TBD |
-| Growth Case | 12 months | TBD | TBD | TBD | TBD |
-| Conservative | 24 months | TBD | TBD | TBD | TBD |
-| Base Case | 24 months | TBD | TBD | TBD | TBD |
-| Growth Case | 24 months | TBD | TBD | TBD | TBD |
+| Scenario | Timeline | Users | Total Revenue | Avg Monthly Revenue | Adjusted Operating Cost | Net Position |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| Conservative | 6 months | 100 lifetime + 120 monthly | GBP 7,500 | GBP 1,250 | GBP 7,398 | GBP 102 |
+| Base Case | 6 months | 35 | GBP 9,450 | GBP 1,575 | GBP 7,398 | GBP 2,052 |
+| Growth Case | 6 months | 50 | GBP 13,500 | GBP 2,250 | GBP 7,398 | GBP 6,102 |
+| Conservative | 12 months | 100 lifetime + 120 monthly | GBP 25,500 | GBP 2,125 | GBP 15,696 | GBP 9,804 |
+| Base Case | 12 months | 80 | GBP 43,200 | GBP 3,600 | GBP 15,696 | GBP 27,504 |
+| Growth Case | 12 months | 125 | GBP 67,500 | GBP 5,625 | GBP 15,696 | GBP 51,804 |
+| Conservative | 24 months | 100 lifetime + 120 monthly | GBP 61,500 | GBP 2,563 | GBP 32,292 | GBP 29,208 |
+| Base Case | 24 months | 170 | GBP 183,600 | GBP 7,650 | GBP 32,292 | GBP 151,308 |
+| Growth Case | 24 months | 280 | GBP 302,400 | GBP 12,600 | GBP 32,292 | GBP 270,108 |
 
 Projection assumptions to confirm:
 
-- Starter, Basic, Pro, and Unlimited customer mix
-- Trial-to-paid conversion rate
-- Average monthly churn
-- Paid acquisition budget
-- AI/inference cost per active customer
-- Support cost per customer
-- Infrastructure cost scaling
+- Conservative 6-month revenue totals GBP 7,500, so average monthly revenue is GBP 1,250.
+- The monthly AI feature package is modeled at GBP 25/user from Month 4 onward.
+- The deck's gross 6-month operating plan is GBP 8,298, but the conservative case removes GBP 900 of pre-AI feature cost before Month 4.
+- Adjusted operating cost equals GBP 7,398 for 6 months, GBP 15,696 for 12 months, and GBP 32,292 for 24 months.
+- The conservative 6-month case moves into a positive GBP 102 net position after the AI feature revenue ramp.
+- Trial-to-paid conversion, churn, and actual plan mix should be updated from billing data before sending.
 
-### Page 9: Allocation Plan For GBP 20,000
+### Page 9: Expense Projections
+
+Purpose: provide a concrete first 90-day expense projection before the Month 4 AI package starts.
+
+Use this three-month pricing/cost plan:
+
+| Cost Area | Month 1 | Month 2 | Month 3 | 3-Month Total |
+| --- | ---: | ---: | ---: | ---: |
+| AI Build and Campaign Automation | GBP 0 | GBP 0 | GBP 0 | GBP 0 |
+| Support and Customer Success | GBP 300 | GBP 300 | GBP 300 | GBP 900 |
+| Maintenance and Platform Ops | GBP 150 | GBP 150 | GBP 150 | GBP 450 |
+| Lead Adding and Data Tooling | GBP 100 | GBP 100 | GBP 100 | GBP 300 |
+| Warmup and Email Operations | GBP 150 | GBP 150 | GBP 150 | GBP 450 |
+| Growth and Distribution | GBP 250 | GBP 300 | GBP 350 | GBP 900 |
+| Other Admin and Contingency | GBP 83 | GBP 83 | GBP 83 | GBP 249 |
+| Total Monthly Cost | GBP 1,033 | GBP 1,083 | GBP 1,133 | GBP 3,249 |
+
+Month-by-month use of budget:
+
+| Month | Budget | Primary Use | Expected Operating Output |
+| --- | ---: | --- | --- |
+| Month 1 | GBP 1,033 | Pre-AI support setup, warmup foundation, first lead list, platform maintenance | Lean launch operations before AI feature cost begins |
+| Month 2 | GBP 1,083 | Support coverage, campaign maintenance, lead verification, warmup monitoring | Cleaner campaign execution and stronger lead data before AI package launch |
+| Month 3 | GBP 1,133 | Expanded distribution, continued support, ongoing maintenance, lead adding, warmup control | Ready for Month 4 AI feature launch and paid monthly package rollout |
+
+What the costs include:
+
+- AI build: starts with the Month 4 AI package and covers prompt-to-campaign setup, AI email drafts, automation logic, model usage, QA, and reporting support.
+- Support: onboarding, ticket handling, demo help, client communication, and campaign quality review.
+- Maintenance: hosting, database, monitoring, backups, uptime checks, and small bug-fix allowance.
+- Lead adding: lead import, enrichment, validation, segmentation, and CRM preparation.
+- Warmup: mailbox setup, domain reputation work, deliverability checks, inbox health, and sender protection.
+- Other: growth distribution, admin subscriptions, compliance review, payment fees, and contingency buffer.
+
+### Page 10: Allocation Plan For GBP 20,000
 
 Purpose: show how the requested capital will be spent.
 
@@ -361,7 +404,7 @@ Remaining GBP 11,702 should be allocated after founder confirmation. Possible ca
 
 Do not present the remaining allocation as final until confirmed.
 
-### Page 10: Milestone Plan
+### Page 11: Milestone Plan
 
 Purpose: connect the GBP 20,000 raise to measurable progress.
 
@@ -382,7 +425,7 @@ Add 90-day milestones:
 - Validate pricing tier uptake
 - Prepare next investor update with revenue movement
 
-### Page 11: Proposed Terms / Equity Structure
+### Page 12: Proposed Terms / Equity Structure
 
 Purpose: answer Gina's terms request.
 
@@ -402,7 +445,7 @@ Suggested placeholder:
 
 `Crownvo is seeking GBP 20,000 to scale the AI operator layer and accelerate growth. Final investment structure, valuation, and equity terms are open for discussion and subject to legal review.`
 
-### Page 12: Risk And Mitigation
+### Page 13: Risk And Mitigation
 
 Purpose: show maturity and answer board concerns before they ask.
 
@@ -416,7 +459,7 @@ Suggested table:
 | Product scope could expand too fast | Roll out in phases: assistant, builder, operator |
 | Revenue proof may still be early | Include current revenue details, pilots, pipeline, and monthly updates |
 
-### Page 13: Appendix
+### Page 14: Appendix
 
 Purpose: keep the main packet clean while preserving detail.
 

@@ -132,7 +132,7 @@
               </tr>
               <tr>
                 <th>Financial Projections or Allocation Plans</th>
-                <td>Page 8: Financial Projections; Page 9: Allocation Plan for GBP 20,000</td>
+                <td>Page 8: Financial Projections; Page 9: Expense Projections; Page 10: Allocation Plan for GBP 20,000</td>
               </tr>
               <tr>
                 <th>Current Revenue Details</th>
@@ -140,7 +140,7 @@
               </tr>
               <tr>
                 <th>Proposed Terms or Equity Structure</th>
-                <td>Page 11: Proposed Terms / Equity Structure</td>
+                <td>Page 12: Proposed Terms / Equity Structure</td>
               </tr>
             </tbody>
           </table>
@@ -543,13 +543,59 @@
       </section>
 
       <!-- PAGE 8: FINANCIAL PROJECTIONS -->
-      <section class="print-page">
+      <section class="print-page compact-financial">
         <h2 class="page-title">Financial Projections</h2>
 
         <div class="section-block">
           <p class="tbd-note">
-            All projections are management assumptions, not guaranteed results. Three scenarios are presented across 6-month, 12-month, and 24-month windows.
+            All projections are management assumptions, not guaranteed results. The conservative six-month case uses the founder-provided ramp: GBP 2,000 lifetime revenue, then GBP 750 in Month 4, GBP 1,750 in Month 5, and GBP 3,000 in Month 6. Average monthly revenue is total six-month revenue divided by 6.
           </p>
+        </div>
+
+        <div class="section-block">
+          <h3>Conservative 6-Month Revenue Ramp</h3>
+          <table class="info-table">
+            <thead>
+              <tr>
+                <th>Timing</th>
+                <th>Revenue Type</th>
+                <th>Users</th>
+                <th>Revenue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Launch period</th>
+                <td>Lifetime package - one time</td>
+                <td>100</td>
+                <td>GBP 2,000</td>
+              </tr>
+              <tr>
+                <th>Month 4</th>
+                <td>Monthly package with AI feature</td>
+                <td>30</td>
+                <td>GBP 750</td>
+              </tr>
+              <tr>
+                <th>Month 5</th>
+                <td>Monthly package with AI feature</td>
+                <td>70 total</td>
+                <td>GBP 1,750</td>
+              </tr>
+              <tr>
+                <th>Month 6</th>
+                <td>Monthly package with AI feature</td>
+                <td>120 total</td>
+                <td>GBP 3,000</td>
+              </tr>
+              <tr>
+                <th>6-Month Total</th>
+                <td>One-time plus monthly ramp</td>
+                <td>100 lifetime + 120 monthly</td>
+                <td>GBP 7,500</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <table class="info-table">
@@ -557,84 +603,94 @@
             <tr>
               <th>Scenario</th>
               <th>Timeline</th>
-              <th>Customers</th>
-              <th>Expected MRR</th>
-              <th>Monthly Cost</th>
-              <th>Net Monthly Position</th>
+              <th>Users</th>
+              <th>Total Revenue</th>
+              <th>Avg Monthly Revenue</th>
+              <th>Adjusted Operating Cost</th>
+              <th>Net Position</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th>Conservative</th>
               <td>6 months</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
+              <td>100 lifetime + 120 monthly</td>
+              <td>GBP 7,500</td>
+              <td>GBP 1,250</td>
+              <td>GBP 7,398</td>
+              <td>GBP 102</td>
             </tr>
             <tr>
               <th>Base Case</th>
               <td>6 months</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
+              <td>35</td>
+              <td>GBP 9,450</td>
+              <td>GBP 1,575</td>
+              <td>GBP 7,398</td>
+              <td>GBP 2,052</td>
             </tr>
             <tr>
               <th>Growth Case</th>
               <td>6 months</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
+              <td>50</td>
+              <td>GBP 13,500</td>
+              <td>GBP 2,250</td>
+              <td>GBP 7,398</td>
+              <td>GBP 6,102</td>
             </tr>
             <tr>
               <th>Conservative</th>
               <td>12 months</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
+              <td>100 lifetime + 120 monthly</td>
+              <td>GBP 25,500</td>
+              <td>GBP 2,125</td>
+              <td>GBP 15,696</td>
+              <td>GBP 9,804</td>
             </tr>
             <tr>
               <th>Base Case</th>
               <td>12 months</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
+              <td>80</td>
+              <td>GBP 43,200</td>
+              <td>GBP 3,600</td>
+              <td>GBP 15,696</td>
+              <td>GBP 27,504</td>
             </tr>
             <tr>
               <th>Growth Case</th>
               <td>12 months</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
+              <td>125</td>
+              <td>GBP 67,500</td>
+              <td>GBP 5,625</td>
+              <td>GBP 15,696</td>
+              <td>GBP 51,804</td>
             </tr>
             <tr>
               <th>Conservative</th>
               <td>24 months</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
+              <td>100 lifetime + 120 monthly</td>
+              <td>GBP 61,500</td>
+              <td>GBP 2,563</td>
+              <td>GBP 32,292</td>
+              <td>GBP 29,208</td>
             </tr>
             <tr>
               <th>Base Case</th>
               <td>24 months</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
+              <td>170</td>
+              <td>GBP 183,600</td>
+              <td>GBP 7,650</td>
+              <td>GBP 32,292</td>
+              <td>GBP 151,308</td>
             </tr>
             <tr>
               <th>Growth Case</th>
               <td>24 months</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
-              <td>TBD</td>
+              <td>280</td>
+              <td>GBP 302,400</td>
+              <td>GBP 12,600</td>
+              <td>GBP 32,292</td>
+              <td>GBP 270,108</td>
             </tr>
           </tbody>
         </table>
@@ -642,18 +698,144 @@
         <div class="section-block">
           <h3>Projection Assumptions to Confirm</h3>
           <ul class="feature-list">
-            <li>Starter, Basic, Pro, and Unlimited customer mix</li>
-            <li>Trial-to-paid conversion rate</li>
-            <li>Average monthly churn</li>
-            <li>Paid acquisition budget</li>
-            <li>AI/inference cost per active customer</li>
-            <li>Support cost per customer</li>
-            <li>Infrastructure cost scaling</li>
+            <li>Conservative 6-month revenue totals GBP 7,500, so average monthly revenue is GBP 1,250.</li>
+            <li>The monthly AI feature package is modeled at GBP 25/user from Month 4 onward.</li>
+            <li>The deck's gross 6-month operating plan is GBP 8,298, but the conservative case removes GBP 900 of pre-AI feature cost before Month 4.</li>
+            <li>Adjusted operating cost equals GBP 7,398 for 6 months, GBP 15,696 for 12 months, and GBP 32,292 for 24 months.</li>
+            <li>The conservative 6-month case moves into a positive GBP 102 net position after the AI feature revenue ramp.</li>
+            <li>Trial-to-paid conversion, churn, and actual plan mix should be updated from billing data before sending.</li>
           </ul>
         </div>
       </section>
 
-      <!-- PAGE 9: ALLOCATION PLAN FOR GBP 20,000 -->
+      <!-- PAGE 9: EXPENSE PROJECTIONS -->
+      <section class="print-page">
+        <h2 class="page-title">Expense Projections</h2>
+
+        <div class="section-block">
+          <p class="tbd-note">
+            These first 90-day projections are management estimates, not guaranteed results. Months 1-3 are treated as pre-AI feature launch months, so AI build cost is not included until the AI package starts in Month 4.
+          </p>
+        </div>
+
+        <table class="info-table">
+          <thead>
+            <tr>
+              <th>Cost Area</th>
+              <th>Month 1</th>
+              <th>Month 2</th>
+              <th>Month 3</th>
+              <th>3-Month Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>AI Build and Campaign Automation</th>
+              <td>GBP 0</td>
+              <td>GBP 0</td>
+              <td>GBP 0</td>
+              <td>GBP 0</td>
+            </tr>
+            <tr>
+              <th>Support and Customer Success</th>
+              <td>GBP 300</td>
+              <td>GBP 300</td>
+              <td>GBP 300</td>
+              <td>GBP 900</td>
+            </tr>
+            <tr>
+              <th>Maintenance and Platform Ops</th>
+              <td>GBP 150</td>
+              <td>GBP 150</td>
+              <td>GBP 150</td>
+              <td>GBP 450</td>
+            </tr>
+            <tr>
+              <th>Lead Adding and Data Tooling</th>
+              <td>GBP 100</td>
+              <td>GBP 100</td>
+              <td>GBP 100</td>
+              <td>GBP 300</td>
+            </tr>
+            <tr>
+              <th>Warmup and Email Operations</th>
+              <td>GBP 150</td>
+              <td>GBP 150</td>
+              <td>GBP 150</td>
+              <td>GBP 450</td>
+            </tr>
+            <tr>
+              <th>Growth and Distribution</th>
+              <td>GBP 250</td>
+              <td>GBP 300</td>
+              <td>GBP 350</td>
+              <td>GBP 900</td>
+            </tr>
+            <tr>
+              <th>Other Admin and Contingency</th>
+              <td>GBP 83</td>
+              <td>GBP 83</td>
+              <td>GBP 83</td>
+              <td>GBP 249</td>
+            </tr>
+            <tr>
+              <th>Total Monthly Cost</th>
+              <td>GBP 1,033</td>
+              <td>GBP 1,083</td>
+              <td>GBP 1,133</td>
+              <td>GBP 3,249</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="section-block">
+          <h3>Month-by-Month Use of Budget</h3>
+          <table class="info-table">
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Budget</th>
+                <th>Primary Use</th>
+                <th>Expected Operating Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Month 1</th>
+                <td>GBP 1,033</td>
+                <td>Pre-AI support setup, warmup foundation, first lead list, platform maintenance.</td>
+                <td>Lean launch operations before AI feature cost begins.</td>
+              </tr>
+              <tr>
+                <th>Month 2</th>
+                <td>GBP 1,083</td>
+                <td>Support coverage, campaign maintenance, lead verification, warmup monitoring.</td>
+                <td>Cleaner campaign execution and stronger lead data before AI package launch.</td>
+              </tr>
+              <tr>
+                <th>Month 3</th>
+                <td>GBP 1,133</td>
+                <td>Expanded distribution, continued support, ongoing maintenance, lead adding, warmup control.</td>
+                <td>Ready for Month 4 AI feature launch and paid monthly package rollout.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section-block">
+          <h3>What the Costs Include</h3>
+          <ul class="feature-list">
+            <li>AI build: starts with the Month 4 AI package and covers prompt-to-campaign setup, AI email drafts, automation logic, model usage, QA, and reporting support.</li>
+            <li>Support: onboarding, ticket handling, demo help, client communication, and campaign quality review.</li>
+            <li>Maintenance: hosting, database, monitoring, backups, uptime checks, and small bug-fix allowance.</li>
+            <li>Lead adding: lead import, enrichment, validation, segmentation, and CRM preparation.</li>
+            <li>Warmup: mailbox setup, domain reputation work, deliverability checks, inbox health, and sender protection.</li>
+            <li>Other: growth distribution, admin subscriptions, compliance review, payment fees, and contingency buffer.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PAGE 10: ALLOCATION PLAN FOR GBP 20,000 -->
       <section class="print-page">
         <h2 class="page-title">Allocation Plan for GBP 20,000</h2>
 
@@ -768,7 +950,7 @@
         </div>
       </section>
 
-      <!-- PAGE 10: MILESTONE PLAN -->
+      <!-- PAGE 11: MILESTONE PLAN -->
       <section class="print-page">
         <h2 class="page-title">Milestone Plan</h2>
 
@@ -815,7 +997,7 @@
         </div>
       </section>
 
-      <!-- PAGE 11: PROPOSED TERMS / EQUITY STRUCTURE -->
+      <!-- PAGE 12: PROPOSED TERMS / EQUITY STRUCTURE -->
       <section class="print-page">
         <h2 class="page-title">Proposed Terms / Equity Structure</h2>
 
@@ -872,7 +1054,7 @@
         </div>
       </section>
 
-      <!-- PAGE 12: RISK AND MITIGATION -->
+      <!-- PAGE 13: RISK AND MITIGATION -->
       <section class="print-page">
         <h2 class="page-title">Risk and Mitigation</h2>
 
@@ -908,7 +1090,7 @@
         </table>
       </section>
 
-      <!-- PAGE 13: APPENDIX -->
+      <!-- PAGE 14: APPENDIX -->
       <section class="print-page">
         <h2 class="page-title">Appendix</h2>
 
