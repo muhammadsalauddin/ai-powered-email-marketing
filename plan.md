@@ -296,37 +296,37 @@ Projection windows:
 - 12 months
 - 24 months
 
-Conservative 6-month revenue ramp:
+6-month revenue ramp by scenario:
 
-| Timing | Revenue Type | Users | Revenue |
-| --- | --- | ---: | ---: |
-| Launch period | Lifetime package - one time | 100 | GBP 2,000 |
-| Month 4 | Monthly package with AI feature | 30 | GBP 750 |
-| Month 5 | Monthly package with AI feature | 70 total | GBP 1,750 |
-| Month 6 | Monthly package with AI feature | 120 total | GBP 3,000 |
-| 6-Month Total | One-time plus monthly ramp | 100 lifetime + 120 monthly | GBP 7,500 |
+| Timing | Conservative Users | Conservative Revenue | Base Users | Base Revenue | Growth Users | Growth Revenue |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Launch period | 100 | GBP 2,000 | 150 | GBP 3,000 | 200 | GBP 4,000 |
+| Month 4 | 30 | GBP 750 | 50 | GBP 1,250 | 80 | GBP 2,000 |
+| Month 5 | 70 total | GBP 1,750 | 100 total | GBP 2,500 | 160 total | GBP 4,000 |
+| Month 6 | 120 total | GBP 3,000 | 170 total | GBP 4,250 | 280 total | GBP 7,000 |
+| 6-Month Total | 100 lifetime + 120 monthly | GBP 7,500 | 150 lifetime + 170 monthly | GBP 11,000 | 200 lifetime + 280 monthly | GBP 17,000 |
 
 Suggested projection table:
 
 | Scenario | Timeline | Users | Total Revenue | Avg Monthly Revenue | Adjusted Operating Cost | Net Position |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
 | Conservative | 6 months | 100 lifetime + 120 monthly | GBP 7,500 | GBP 1,250 | GBP 7,398 | GBP 102 |
-| Base Case | 6 months | 35 | GBP 9,450 | GBP 1,575 | GBP 7,398 | GBP 2,052 |
-| Growth Case | 6 months | 50 | GBP 13,500 | GBP 2,250 | GBP 7,398 | GBP 6,102 |
+| Base Case | 6 months | 150 lifetime + 170 monthly | GBP 11,000 | GBP 1,833 | GBP 7,398 | GBP 3,602 |
+| Growth Case | 6 months | 200 lifetime + 280 monthly | GBP 17,000 | GBP 2,833 | GBP 7,398 | GBP 9,602 |
 | Conservative | 12 months | 100 lifetime + 120 monthly | GBP 25,500 | GBP 2,125 | GBP 15,696 | GBP 9,804 |
-| Base Case | 12 months | 80 | GBP 43,200 | GBP 3,600 | GBP 15,696 | GBP 27,504 |
-| Growth Case | 12 months | 125 | GBP 67,500 | GBP 5,625 | GBP 15,696 | GBP 51,804 |
+| Base Case | 12 months | 150 lifetime + 170 monthly | GBP 36,500 | GBP 3,042 | GBP 15,696 | GBP 20,804 |
+| Growth Case | 12 months | 200 lifetime + 280 monthly | GBP 59,000 | GBP 4,917 | GBP 15,696 | GBP 43,304 |
 | Conservative | 24 months | 100 lifetime + 120 monthly | GBP 61,500 | GBP 2,563 | GBP 32,292 | GBP 29,208 |
-| Base Case | 24 months | 170 | GBP 183,600 | GBP 7,650 | GBP 32,292 | GBP 151,308 |
-| Growth Case | 24 months | 280 | GBP 302,400 | GBP 12,600 | GBP 32,292 | GBP 270,108 |
+| Base Case | 24 months | 150 lifetime + 170 monthly | GBP 87,500 | GBP 3,646 | GBP 32,292 | GBP 55,208 |
+| Growth Case | 24 months | 200 lifetime + 280 monthly | GBP 143,000 | GBP 5,958 | GBP 32,292 | GBP 110,708 |
 
 Projection assumptions to confirm:
 
-- Conservative 6-month revenue totals GBP 7,500, so average monthly revenue is GBP 1,250.
-- The monthly AI feature package is modeled at GBP 25/user from Month 4 onward.
-- The deck's gross 6-month operating plan is GBP 8,298, but the conservative case removes GBP 900 of pre-AI feature cost before Month 4.
+- Lifetime package revenue is modeled at GBP 20/user; monthly AI-feature revenue is modeled at GBP 25/user from Month 4 onward.
+- 6-month revenue totals are GBP 7,500 conservative, GBP 11,000 base case, and GBP 17,000 growth case.
+- The deck's gross 6-month operating plan is GBP 8,298, but these scenarios remove GBP 900 of pre-AI feature cost before Month 4.
 - Adjusted operating cost equals GBP 7,398 for 6 months, GBP 15,696 for 12 months, and GBP 32,292 for 24 months.
-- The conservative 6-month case moves into a positive GBP 102 net position after the AI feature revenue ramp.
+- All three 6-month scenarios show a positive net position after the AI-feature revenue ramp.
 - Trial-to-paid conversion, churn, and actual plan mix should be updated from billing data before sending.
 
 ### Page 9: Expense Projections
