@@ -306,27 +306,35 @@ Projection windows:
 | Month 6 | 120 total | GBP 3,000 | 170 total | GBP 4,250 | 280 total | GBP 7,000 |
 | 6-Month Total | 100 lifetime + 120 monthly | GBP 7,500 | 150 lifetime + 170 monthly | GBP 11,000 | 200 lifetime + 280 monthly | GBP 17,000 |
 
+Cost scaling by plan:
+
+| Plan | 6-Month Cost | Monthly Cost After Month 6 | What Scales |
+| --- | ---: | ---: | --- |
+| Plan 1: Conservative | GBP 7,398 | GBP 1,383/mo | Lean support, warmup, lead adding, and focused growth activity |
+| Plan 2: Base Case | GBP 8,798 | GBP 1,600/mo | More support coverage, stronger lead volume, higher warmup and AI usage |
+| Plan 3: Growth Case | GBP 11,298 | GBP 2,200/mo | Higher AI usage, larger distribution push, heavier support and email operations |
+
 Suggested projection table:
 
 | Scenario | Timeline | Users | Total Revenue | Avg Monthly Revenue | Adjusted Operating Cost | Net Position |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
 | Conservative | 6 months | 100 lifetime + 120 monthly | GBP 7,500 | GBP 1,250 | GBP 7,398 | GBP 102 |
-| Base Case | 6 months | 150 lifetime + 170 monthly | GBP 11,000 | GBP 1,833 | GBP 7,398 | GBP 3,602 |
-| Growth Case | 6 months | 200 lifetime + 280 monthly | GBP 17,000 | GBP 2,833 | GBP 7,398 | GBP 9,602 |
+| Base Case | 6 months | 150 lifetime + 170 monthly | GBP 11,000 | GBP 1,833 | GBP 8,798 | GBP 2,202 |
+| Growth Case | 6 months | 200 lifetime + 280 monthly | GBP 17,000 | GBP 2,833 | GBP 11,298 | GBP 5,702 |
 | Conservative | 12 months | 100 lifetime + 120 monthly | GBP 25,500 | GBP 2,125 | GBP 15,696 | GBP 9,804 |
-| Base Case | 12 months | 150 lifetime + 170 monthly | GBP 36,500 | GBP 3,042 | GBP 15,696 | GBP 20,804 |
-| Growth Case | 12 months | 200 lifetime + 280 monthly | GBP 59,000 | GBP 4,917 | GBP 15,696 | GBP 43,304 |
+| Base Case | 12 months | 150 lifetime + 170 monthly | GBP 36,500 | GBP 3,042 | GBP 18,398 | GBP 18,102 |
+| Growth Case | 12 months | 200 lifetime + 280 monthly | GBP 59,000 | GBP 4,917 | GBP 24,498 | GBP 34,502 |
 | Conservative | 24 months | 100 lifetime + 120 monthly | GBP 61,500 | GBP 2,563 | GBP 32,292 | GBP 29,208 |
-| Base Case | 24 months | 150 lifetime + 170 monthly | GBP 87,500 | GBP 3,646 | GBP 32,292 | GBP 55,208 |
-| Growth Case | 24 months | 200 lifetime + 280 monthly | GBP 143,000 | GBP 5,958 | GBP 32,292 | GBP 110,708 |
+| Base Case | 24 months | 150 lifetime + 170 monthly | GBP 87,500 | GBP 3,646 | GBP 37,598 | GBP 49,902 |
+| Growth Case | 24 months | 200 lifetime + 280 monthly | GBP 143,000 | GBP 5,958 | GBP 50,898 | GBP 92,102 |
 
 Projection assumptions to confirm:
 
 - Lifetime package revenue is modeled at GBP 20/user; monthly AI-feature revenue is modeled at GBP 25/user from Month 4 onward.
 - 6-month revenue totals are GBP 7,500 conservative, GBP 11,000 base case, and GBP 17,000 growth case.
-- The deck's gross 6-month operating plan is GBP 8,298, but these scenarios remove GBP 900 of pre-AI feature cost before Month 4.
-- Adjusted operating cost equals GBP 7,398 for 6 months, GBP 15,696 for 12 months, and GBP 32,292 for 24 months.
-- All three 6-month scenarios show a positive net position after the AI-feature revenue ramp.
+- Plan costs scale with support load, lead volume, AI usage, warmup volume, and distribution activity.
+- Conservative keeps the leanest cost base; Base adds controlled operating capacity; Growth adds heavier AI, support, and GTM capacity.
+- All three scenarios show their own result, so choosing Plan 1, Plan 2, or Plan 3 changes both revenue and cost.
 - Trial-to-paid conversion, churn, and actual plan mix should be updated from billing data before sending.
 
 ### Page 9: Expense Projections
