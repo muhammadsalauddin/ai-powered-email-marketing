@@ -296,15 +296,50 @@ Projection windows:
 - 12 months
 - 24 months
 
-6-month revenue ramp by scenario:
+Conservative 6-month revenue ramp:
 
-| Timing | Conservative Users | Conservative Revenue | Base Users | Base Revenue | Growth Users | Growth Revenue |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Launch period | 100 | GBP 2,000 | 150 | GBP 3,000 | 200 | GBP 4,000 |
-| Month 4 | 30 | GBP 750 | 50 | GBP 1,250 | 80 | GBP 2,000 |
-| Month 5 | 70 total | GBP 1,750 | 100 total | GBP 2,500 | 160 total | GBP 4,000 |
-| Month 6 | 120 total | GBP 3,000 | 170 total | GBP 4,250 | 280 total | GBP 7,000 |
-| 6-Month Total | 100 lifetime + 120 monthly | GBP 7,500 | 150 lifetime + 170 monthly | GBP 11,000 | 200 lifetime + 280 monthly | GBP 17,000 |
+| Timing | Plan Detail | Users | Revenue |
+| --- | --- | ---: | ---: |
+| Launch period | Lifetime package - one time | 100 | GBP 2,000 |
+| Month 4 | Monthly package with AI feature | 30 | GBP 750 |
+| Month 5 | Monthly package with AI feature | 70 total | GBP 1,750 |
+| Month 6 | Monthly package with AI feature | 120 total | GBP 3,000 |
+| 6-Month Total | One-time plus monthly ramp | 100 lifetime + 120 monthly | GBP 7,500 |
+
+Details:
+
+- Cost plan: GBP 7,398 across the first six months, with lean support, warmup, lead adding, and focused growth activity.
+- Result: GBP 7,500 revenue, GBP 1,250 average monthly revenue, and GBP 102 net position.
+
+Base Case 6-month revenue ramp:
+
+| Timing | Plan Detail | Users | Revenue |
+| --- | --- | ---: | ---: |
+| Launch period | Lifetime package - one time | 150 | GBP 3,000 |
+| Month 4 | Monthly package with AI feature | 50 | GBP 1,250 |
+| Month 5 | Monthly package with AI feature | 100 total | GBP 2,500 |
+| Month 6 | Monthly package with AI feature | 170 total | GBP 4,250 |
+| 6-Month Total | One-time plus monthly ramp | 150 lifetime + 170 monthly | GBP 11,000 |
+
+Details:
+
+- Cost plan: GBP 8,798 across the first six months, with more support coverage, stronger lead volume, higher warmup, and AI usage.
+- Result: GBP 11,000 revenue, GBP 1,833 average monthly revenue, and GBP 2,202 net position.
+
+Growth Case 6-month revenue ramp:
+
+| Timing | Plan Detail | Users | Revenue |
+| --- | --- | ---: | ---: |
+| Launch period | Lifetime package - one time | 200 | GBP 4,000 |
+| Month 4 | Monthly package with AI feature | 80 | GBP 2,000 |
+| Month 5 | Monthly package with AI feature | 160 total | GBP 4,000 |
+| Month 6 | Monthly package with AI feature | 280 total | GBP 7,000 |
+| 6-Month Total | One-time plus monthly ramp | 200 lifetime + 280 monthly | GBP 17,000 |
+
+Details:
+
+- Cost plan: GBP 11,298 across the first six months, with higher AI usage, larger distribution push, heavier support, and email operations.
+- Result: GBP 17,000 revenue, GBP 2,833 average monthly revenue, and GBP 5,702 net position.
 
 Cost scaling by plan:
 
